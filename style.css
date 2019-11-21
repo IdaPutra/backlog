@@ -1,5 +1,7 @@
 
 
+
+
 #work{
     size: 10%;
 }
@@ -40,7 +42,7 @@
   .ui.card,
   .ui.cards>.card {
     background-color: #5C5D5F;
-    color: rgb(51, 97, 100);
+    color:black;
     font-family: cursive;
   }
 
@@ -48,4 +50,19 @@
   #task{
       cursor: pointer;
   }
+
+  #add{
+      text-align: center;
+  }
+
+#backlog{
+    width: fit-content;
+    margin: auto;
+    
+}
+
+#Newmemb{
+    width: fit-content;
+    margin: auto;
+}
 
