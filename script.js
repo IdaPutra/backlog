@@ -45,13 +45,15 @@ $("#edit").click(function () {
 
 $("#save").on("click", function saveinput() {
 
+;
+
   if (!$("#first-name").val() || !$("#last-name").val()) {
     event.preventDefault();
     $('#model2')
       .modal('show')
     $("#cancel").on("click", function () {
       $('#model2')
-        .modal('hide')
+        .modal('fade')
     })
 
   }
@@ -103,32 +105,17 @@ function renderMemberCard(teamMember){
   <div class="item">
 
   <div class="taskcontain"><input type="checkbox" name="example" label id="task">Finish Project!</div>
-      
-      
-      
-      
-    </div>
-
-
   </div>
+ </div>
  <div class="content">
   <h1 class= "finish">Done</h1>
   <div class="taskdone">
   <div class="ui list" id="list">
  <li>
- 
  </li>
   </div>
-
-
-  
-  
-  </div>
-  
-  
-  </div>
-
-   </div>
+</div>
+  </div> </div>
  </div>
 </div> `;
  
@@ -149,6 +136,7 @@ $("#containrow").append(card);
     }
    todo.push(newTask);
    localStorage.setItem("todo", JSON.stringify(todo));
+   
 
    
    renderTask(newTask);
@@ -161,9 +149,21 @@ var newtask= `<div class="taskcontain"><input type="checkbox"  id="check" name="
 $(".item").append(newtask); 
  }
 
+
+
  $(':checkBox').click(function () { 
-   $("li").append ("taskcontain");
+  var list=$(".taskcontain");
+   $("li").append (list);
+
  })
+
+
+
+
+
+
+
+
 
 
 
