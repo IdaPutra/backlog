@@ -1,16 +1,28 @@
 var team =  JSON.parse(localStorage.getItem("team"));
-var todo=  JSON.parse(localStorage.getItem("todo"));
+var todo=JSON.parse(localStorage.getItem("todo"));
+
+  
 if(team){
   for(var i = 0; i<team.length; i++){
     renderMemberCard(team[i] );
   }
-  for(var i = 0; i<todo.length; i++){
-    renderTask(todo[i] );
-  }
+  
+  
 }else{
   team = [];
-  todo=  [];
+ 
   
+}
+
+if(todo) {
+  for(var i = 0; i<todo.length; i++){
+  renderTask(todo[i] );
+  }
+  
+  
+}else{
+ 
+  todo= [];
 }
 
 
