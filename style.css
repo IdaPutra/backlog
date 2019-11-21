@@ -1,0 +1,51 @@
+
+
+#work{
+    size: 10%;
+}
+
+.label {
+    width: 260px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30%;
+}
+
+.container{
+    margin-top: 10%;
+
+    margin-left: 7%;
+}
+
+.wip{
+    size: 100px;
+}
+
+#edit{
+    float:right;
+    background-color: white;
+    
+ 
+}
+
+#delete{
+    float: right;
+}
+
+.ui.card {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .ui.card,
+  .ui.cards>.card {
+    background-color: #5C5D5F;
+    color: rgb(51, 97, 100);
+    font-family: cursive;
+  }
+
+
+  #task{
+      cursor: pointer;
+  }
+
