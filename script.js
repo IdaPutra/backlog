@@ -143,7 +143,7 @@ $("#containrow").append(card);
 
  });
  function renderTask(todolist){
-var newtask= `<div class="taskcontain"><input type="checkbox"  id="check" name="example">${todolist.task}</div>`;
+var newtask= `<div class="taskcontain"><input type="checkbox" id="check" name="example" label id="task">${todolist.task}</div>`;
 
 
 $(".item").append(newtask); 
@@ -156,6 +156,14 @@ $(".item").append(newtask);
    $("li").append (list);
 
  })
+
+
+
+
+
+
+
+
 
 
 
